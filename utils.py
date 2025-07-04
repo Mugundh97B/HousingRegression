@@ -52,7 +52,7 @@ def tune_and_train_models(df):
             "params": {
                 "fit_intercept": [True, False],
                 "positive": [True, False],
-                "normalize": [True, False]  # May raise warning in newer sklearn
+                "copy_X": [True, False]  # changed becasue of new sktlearn
             }
         },
         "Ridge": {
